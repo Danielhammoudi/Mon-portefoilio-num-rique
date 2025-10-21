@@ -1,0 +1,62 @@
+body{
+    background-color: #21BA1C;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+input[type="text"], a{
+    color: rgb(124, 206, 254);
+    transition: color 200ms;
+    text-align: center;
+}
+
+a:hover{
+  color: rgb(255, 0, 166); 
+}
+
+a{
+    display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 32px;
+  justify-items: center;
+}
+
+.layout{
+  display: flex;
+  gap: 32px;        
+  align-items: flex-start;
+  justify-content: center; 
+}
+
+.col{
+  width: 420px;        
+}
+
+@media (max-width: 700px){
+  .layout{ 
+    flex-direction: column;
+    align-items: center;
+  }
+  .col{ width: min(100%, 500px); }
+}
+
+.col{
+  width: 420px;
+  text-align: center;
+}
+
+.col a{
+  display: inline-block;    
+  margin: 14px 0;           
+}
+
+.col a:hover{
+  text-decoration: underline;
+}
+
+h2{
+    color: gainsboro;
+}
